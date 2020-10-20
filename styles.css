@@ -1,0 +1,14 @@
+body {
+    background-color: lightgray;
+    margin: 0px;
+    
+}
+
+.containerMain {
+    background-color: darkgray;
+
+} 
+
+.nav {
+    text-align: center;
+}
