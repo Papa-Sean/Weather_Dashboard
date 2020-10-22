@@ -17,7 +17,7 @@ $(document).ready(function(){
                 success: function(data){
                     var widget = fshow(data);
 
-                    $("#fshow").html(widget);
+                    $("#fiveDay").html(widget);
                     $("#city").val('');
                 }
             })

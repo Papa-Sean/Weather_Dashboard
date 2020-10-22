@@ -13,3 +13,19 @@ body {
     text-align: center;
 }
 
+.fiveDayMain {
+
+    align-content: flex-end;
+
+}
+
+#fiveDayMain {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: red;
+}
+.nav {
+    color: red;
+}
