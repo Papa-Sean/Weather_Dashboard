@@ -11,7 +11,7 @@ $(document).ready(function(){
 
             $.ajax({
 
-                url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial" + "&APPID=a35dfc04904724a33f92bb9a5d159a73",
+                url: "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial" + "&APPID=a35dfc04904724a33f92bb9a5d159a73",
                 type: "GET",
                 dataType: "jsonp",
                 success: function(data){
@@ -24,7 +24,7 @@ $(document).ready(function(){
             
             $.ajax({
 
-                url: "https://api.openweathermap.org/data/2.5/find?q=" + city + "&units=imperial" + "&APPID=a35dfc04904724a33f92bb9a5d159a73",
+                url: "http://api.openweathermap.org/data/2.5/find?q=" + city + "&units=imperial" + "&APPID=a35dfc04904724a33f92bb9a5d159a73",
                 type: "GET",
                 dataType: "jsonp",
                 success: function(data){
