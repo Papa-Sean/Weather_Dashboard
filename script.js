@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
     $('#submit').click(function(){
+        event.preventDefault();
 
         var city = $('#city').val();
         var cityHist = $('#city').val()
-        localStorage.setItem('city', JSON.stringify(cityHist));
+        localStorage.setItem('#city', JSON.stringify(cityHist));
         
        
         
@@ -65,5 +66,3 @@ function fshow(data) {
     "<h5><strong>4-Day</strong>:<br> <img src='https://openweathermap.org/img/wn/" + data.list[3].weather[0].icon + ".png'><br><strong>High</strong>:" + data.list[3].main.temp_max + " &deg;F<br><strong>Low</strong>:" + data.list[3].main.temp_min + " &deg;F  </h5>" +
     "<h5><strong>5-Day</strong>:<br> <img src='https://openweathermap.org/img/wn/" + data.list[4].weather[0].icon + ".png'><br><strong>High</strong>:" + data.list[4].main.temp_max + " &deg;F<br><strong>Low</strong>:" + data.list[4].main.temp_min + " &deg;F  </h5>" ;
 };
-
-fuction 
