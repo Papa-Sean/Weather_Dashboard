@@ -1,10 +1,11 @@
+//this call and places the temp wind humidity
 function show(data) {
     return "<h2><strong>Local Weather For</strong>:<br> " + data.list[0].name + ", " + data.list[0].sys.country + "</h2>" +
     "<h3><strong>Weather</strong>: " + data.list[0].main.temp + " &deg;F<img src='https://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + ".png'></h3>" +
     "<h4><strong>Humidity</strong>: " + data.list[0].main.humidity + "%</h4>" +
     "<h4><strong>Wind Speed</strong>: " + data.list[0].wind.speed + "mph</h4>" ;
 };
-
+//this call and places the 5 day forecast
 function fshow(data) {
     return  "<h5><strong>Current</strong>:<br> <img src='https://openweathermap.org/img/wn/" + data.list[0].weather[0].icon + ".png'><br><strong>High</strong>:" + data.list[0].main.temp_max + " &deg;F<br><strong>Low</strong>:" + data.list[0].main.temp_min + " &deg;F  </h5>" +
     "<h5><strong>2-Day</strong>:<br> <img src='https://openweathermap.org/img/wn/" + data.list[1].weather[0].icon + ".png'><br><strong>High</strong>:" + data.list[1].main.temp_max + " &deg;F<br><strong>Low</strong>:" + data.list[1].main.temp_min + " &deg;F  </h5>" +
@@ -13,7 +14,7 @@ function fshow(data) {
     "<h5><strong>5-Day</strong>:<br> <img src='https://openweathermap.org/img/wn/" + data.list[4].weather[0].icon + ".png'><br><strong>High</strong>:" + data.list[4].main.temp_max + " &deg;F<br><strong>Low</strong>:" + data.list[4].main.temp_min + " &deg;F  </h5>" ;
 };
 
-
+//linked to html to get city name
 
     $('#submit').click(function(){
         event.preventDefault(); 
@@ -32,7 +33,7 @@ function fshow(data) {
         
        
         
-        
+       //api call for forecast this is the data called in the second function 
 
 
         if(city != ''){
@@ -50,7 +51,7 @@ function fshow(data) {
                 }
             })
 
-
+//api call for data in the first info screen this is the data called for the second function
 
             $.ajax({
 
@@ -75,7 +76,7 @@ function fshow(data) {
         }
     });
     
-
+//i was losing one of the two data sets above, I used this to reload css after javascript and it stopped happening
 });
 (function(){
     let links = document.getElementsByTagName('link');
@@ -89,3 +90,4 @@ function fshow(data) {
             }
         }
   })();
+//everytime i tried to console log or store to local storage I started to lose work.  I know how to finish this page but I was running into a time crunch and things stopped working.  I had to get to a point of functionality before midnight

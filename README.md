@@ -1,3 +1,25 @@
+HTML
+- built a frame to house JS results
+
+CSS
+- minimal styling until the end
+- figured out how to reload CSS without reloading page so JS could be styled
+
+JS
+- I struggled with:
+    Best I could tell, I needed info from one API call in order to access the info I needed for the UVI call
+    I could not figure that out for the life of me
+
+    For whatever reason each way I tried to store locally messed with how my js hit the page
+
+- API call formatted
+- 2nd API call formatted
+- Created local storage
+- deleted local storage
+- make page functional for deadline.
+
+
+
 # 06 Server-Side APIs: Weather Dashboard
 
 Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
